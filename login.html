@@ -1,40 +1,36 @@
 <!Doctype>
 <html lang="en">
-    <style>
-        footer{text-align: center;}
-        main{text-align: center;}
-        .titlu_sus{text-align: center;}
-    </style>
     <head>
         <meta charset="UTF-8"></meta>
         <title>Login</title>
+        <link rel="stylesheet" href="login.css" type="text/css">
     </head>
     <body>
-        <div class="titlu_sus"><h1>Login</h1></div>
+        <div class="titlu_sus"><h1 id="login_sus">Login</h1></div>
         <main>
             <form action="index.html">
                 <fieldset>
-                    <label for="email"> Username</label>
+                    <label id="label_email" for="email"> Username</label>
                     <input type="email" id="email" placeholder="ex: email@yahoo.com" required>
                     <br>
                     <br>
-                    <label for="password"> Password</label>
+                    <label id="label_password" for="password"> Password</label>
                     <input type="password" id="password" placeholder="password" required>
                     <br>
                     <br>
-                    <input type="checkbox" id="rememberd" checked>
+                    <input id="label_remembered" type="checkbox" id="rememberd" checked>
                     <label for="rememberd">Remember me</label>
                     <br>
                     <br>
-                    <button>Submit</button>
+                    <button id="submit">Submit</button>
                 </fieldset>
             </form>
             
         </main>
-        <footer>
+        <footer class="footer">
             <h3>Check out for contact details here</h3> 
             <h3><a href="contacts.html">Contacts</a></aStudies></h3>
-            <p>Copyright © 2022 / Lupsa Sergiu-Rares</p>
+            <p id="Copyright">Copyright © 2022 / Lupsa Sergiu-Rares</p>
 
         </footer>
     </body>

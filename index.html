@@ -3,21 +3,22 @@
     <head>
         <meta charset="UTF-8"></meta>
         <title>Resume Lupsa Sergiu-Rares</title>
+        <link href="index.css" rel="stylesheet">
     </head>
-    <body>
-        <h1>This is my Resume</h1>
+    <body class="all_text">
+        <h1 id="titlu" >This is my Resume</h1>
         <br>
         <main>
-            <p>Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and 
+            <p id="about_me">Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and 
                 I have been living there since. I study computer science. I like to meet new people and 
                 start doing or learning new things.
             </p>
-            <picture>
+            <picture id="my_self">
                 <source media="(min-width:650px)" srcset="pozaNoua.jpeg"/>
                 <source media="(min-width:465px)" srcset="pozaVeche.jpeg"/>
                 <img src="pozaNoua.jpeg" style="width: 315px; height: 560px;" alt="a nice guy">
             </picture>
-            <video
+            <video id="video"
                 controls
                 muted
                 id="video"
@@ -38,12 +39,12 @@
                 </ul>
             </section>
         </main>
-        <footer>
+        <footer class="buttom_links">
             <h3>Check out other details here</h3> 
             <ul>
-                <li><a href="studies.html">Studies</a></aStudies></li>
-                <li><a href="experienceAndSkills.html">Experience and skills</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a id="suties" href="studies.html">Studies</a></aStudies></li>
+                <li><a id="experienceAndSkills" href="experienceAndSkills.html">Experience and skills</a></li>
+                <li><a id="login" href="login.html">Login</a></li>
             </ul>
         </footer>
     </body>

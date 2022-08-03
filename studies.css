@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("backGround.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 450px;
+  height: 700px;
+}
+
+.navigationDiv {
+  font-size: 24px;
+  background-color: white;
+  margin: 10px;
+}
+
+.fa-solid fa-barsP {
+  font-size: 34px;
+}
+
+#iconDiv {
+  background-color: white;
+}
+#meniIcon {
+  height: 50px;
+  width: 50px;
+}
+
+.hideClass {
+  display: none;
+}

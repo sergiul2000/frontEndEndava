@@ -1,0 +1,7 @@
+#inputLabel {
+  color: red;
+}
+
+.elementOfList:hover {
+  background-color: silver;
+}

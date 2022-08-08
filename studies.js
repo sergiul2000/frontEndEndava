@@ -1,11 +1,10 @@
-const navDivs = document.querySelectorAll('navigationDiv');
-function handleOnClickIcon(){
-    //console.log(navDivs);
+const navigationList = document.getElementById('menuDesktop');
 
-    navDivs.forEach(function(value){
-    value.style.display = 'none';
-    })
-}
+const meniuIcon = document.getElementById('meniuIcon');
 
-
-
+meniuIcon.addEventListener('click',() =>{
+     if(navigationList.style.display == 'none')
+        navigationList.style.display = 'block';
+    else
+                navigationList.style.display = 'none';
+});

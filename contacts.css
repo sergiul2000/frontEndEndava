@@ -41,16 +41,16 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
   gap: 4rem;
 }
 nav ul {
-  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: block;
   gap: 2rem;
   list-style: none;
 }
-nav h3 a,
 nav ul li a {
   display: block;
   line-height: var(--header-height);
@@ -67,6 +67,8 @@ main a {
 
 #meniuIcon {
   display: none;
+  text-align: center;
+  font-size: 24px;
 }
 
 /** - Tablet Landscape und Large UI Scales */
@@ -77,6 +79,33 @@ main a {
   }
   #meniuIcon {
     display: block;
+  }
+}
+
+.hidden {
+  display: block;
+}
+
+@media (max-width: 410px) {
+  .hidden {
+    display: none;
+  }
+  .liElementNav {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .liElementNav {
+    height: fit-content;
+    width: fit-content;
+  }
+  nav ul {
+    display: flex !important;
+    text-align: center;
+  }
+  nav ul li a {
+    display: flex !important;
   }
 }
 

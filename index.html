@@ -21,18 +21,43 @@
             </nav>
         </header>
         <main>
-            <h1 id="titlu" >This is my Resume</h1>
-            <br>
-            <p id="about_me">Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and 
-                I have been living there since. I study computer science. I like to meet new people and 
-                start doing or learning new things.
-            </p>
-            <br>
-            <picture id="my_self">
-                <source media="(min-width:465px)" srcset="pozaNoua.jpeg"/>
-                <source media="(max-width:465px)" srcset="pozaVeche.jpeg"/>
-                <img src="pozaNoua.jpeg" id='poza' style="width: 315px; height: 560px;" alt="a nice guy" >
-            </picture>
+            <!-- <h1 id="titlu" >This is my Resume</h1>
+            <br> -->
+            <!-- A div with container id to hold the card -->
+            <div id="container">
+
+                <!-- A div with card class for the card  -->
+                <div class="card">
+                <picture id="my_self">
+                    <source media="(min-width:465px)" srcset="pozaNoua.jpeg"/>
+                    <source media="(max-width:465px)" srcset="pozaVeche.jpeg"/>
+                    <img src="pozaNoua.jpeg" id='poza' style="width: 250px; height: 400px;" alt="a nice guy" >
+                </picture>
+                <!-- A div with card__details class to hold the details in the card  -->
+                <div class="card__details">
+
+                    <!-- Span with tag class for the tag -->
+                    <span class="tag">Student</span>
+
+                    <span class="tag">4-th year</span>
+
+                    <!-- A div with name class for the name of the card -->
+                    <div class="name">This is my CV</div>
+
+                    <p id="about_me">Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and 
+                        I have been living there since. I study computer science. I like to meet new people and 
+                        start doing or learning new things.
+                    </p>
+
+                    <button>Read more</button>
+                </div>
+
+
+                </div>
+            </div>
+
+
+
             <!-- <video id="video"
                 controls
                 muted

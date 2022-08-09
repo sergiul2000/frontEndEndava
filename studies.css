@@ -152,3 +152,9 @@ header {
   position: fixed;
   top: 0;
 }
+
+@media (min-width: 1024px) {
+  footer {
+    position: absolute;
+  }
+}

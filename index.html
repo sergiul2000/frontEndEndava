@@ -9,9 +9,6 @@
         <script src="index.js" defer></script>
     </head>
     <body class="all_text">
-        <h1 id="titlu" >This is my Resume</h1>
-        <br>
-        
         <header>
             <nav>
                 <i class="fa-solid fa-bars " id="meniuIcon"></i>
@@ -24,14 +21,17 @@
             </nav>
         </header>
         <main>
+            <h1 id="titlu" >This is my Resume</h1>
+            <br>
             <p id="about_me">Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and 
                 I have been living there since. I study computer science. I like to meet new people and 
                 start doing or learning new things.
             </p>
+            <br>
             <picture id="my_self">
                 <source media="(min-width:650px)" srcset="pozaNoua.jpeg"/>
                 <source media="(min-width:465px)" srcset="pozaVeche.jpeg"/>
-                <img src="pozaNoua.jpeg" style="width: 315px; height: 560px;" alt="a nice guy">
+                <img src="pozaNoua.jpeg" id='poza' style="width: 315px; height: 560px;" alt="a nice guy" >
             </picture>
             <!-- <video id="video"
                 controls
@@ -44,23 +44,25 @@
             >
                 <source src="delivery.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-            </video>
-            <br>
-            <section>
-                <h3><b>Contacts</b>:</h3>
-                <ul>
-                    <li><b>Email</b>: sergiul2000@yahoo.com</li>
-                    <li><b>Phone</b>: 0740*****8</li>
-                </ul>
-            </section> -->
+            </video>-->
         </main>
-        <footer class="buttom_links">
-            <!-- <h3>Check out other details here</h3> 
-            <ul>
-                <li><a id="suties" href="studies.html">Studies</a></aStudies></li>
-                <li><a id="experienceAndSkills" href="experienceAndSkills.html">Experience and skills</a></li>
-                <li><a id="login" href="demos.html">Demos</a></li>
-            </ul> -->
+        <footer>
+            <br>
+            <div id="divFooter">
+                <ul>
+                    <a target="_blank" href="https://www.instagram.com/sergiulupsa18/">
+                        <img src="instagram.jpg"   id="insta">
+                    </a>
+                    <a target="_blank" href="https://github.com/sergiul2000?tab=repositories">
+                        <img src="github.png"   id="github">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sergiu-lupsa-851574180/">
+                        <img src="linkedin.png"   id="linkedin">
+                    </a>
+                </ul>
+            </div>
+            <br>
+            <p>Copyright © 2022 / Lupsa Sergiu-Rares</p>
         </footer>
     </body>
 </html>

@@ -41,10 +41,11 @@ header {
 }
 
 nav {
-  justify-content: center;
   gap: 4rem;
 }
 nav ul {
+  justify-content: center;
+  align-content: center;
   text-align: center;
   display: block;
   gap: 2rem;
@@ -91,5 +92,19 @@ main a {
   }
   .liElementNav {
     text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .liElementNav {
+    height: fit-content;
+    width: fit-content;
+  }
+  nav ul {
+    display: flex !important;
+    text-align: center;
+  }
+  nav ul li a {
+    display: flex !important;
   }
 }

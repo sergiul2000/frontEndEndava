@@ -3,8 +3,12 @@ const navigationList = document.getElementById('menuDesktop');
 const meniuIcon = document.getElementById('meniuIcon');
 
 meniuIcon.addEventListener('click',() =>{
-     if(navigationList.style.display == 'none')
+    if(navigationList.classList.contains('hidden')){
         navigationList.style.display = 'block';
-    else
+        navigationList.classList.remove('hidden');
+    }
+    else{
         navigationList.style.display = 'none';
+        navigationList.classList.add('hidden');
+    }
 });

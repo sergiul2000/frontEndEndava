@@ -324,3 +324,7 @@ button:hover {
   position: fixed;
   right: 40px;
 }
+
+button {
+  opacity: 0%;
+}

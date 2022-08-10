@@ -21,6 +21,13 @@
             </nav>
         </header>
         <main>
+            <div id="divDarkMode">
+                <!-- Rounded switch -->
+                <label id='switchul' class="switch">
+                    <input id='switchInput' type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <!-- <p>First demo is a login. Insert an email (ex: ana@yahoo.com) and a password. Then press submit. The main page will show up</p> -->
             <div id="parrentOfCards">
                 <div class="containerDiv" id="firstCard">
@@ -57,7 +64,7 @@
                         </div>
                         <!-- end -->
                         <form class="todo-form js-form">
-                           <input autofocus type="text" aria-label="Enter a new todo item" placeholder="Insert a task here" class="js-todo-input">
+                           <input type="text" aria-label="Enter a new todo item" placeholder="Insert a task here" class="js-todo-input" id="inputTodo">
                         </form>
                     </div>
                     
@@ -69,7 +76,6 @@
                         </defs>
                     </svg>
                 </div> 
-
             </div>
         </main>
         <footer>

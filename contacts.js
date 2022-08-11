@@ -26,7 +26,7 @@ function lightMode(){
   root.style.setProperty('--purple-dark-1', '#FAFAFA');//background
   root.style.setProperty('--purple-dark-2', '#8AA29E');//navigation color
   root.style.setProperty('--purple', 'black');//writting
-  root.style.setProperty('--purple-light-1', '#E3F2FD');
+  root.style.setProperty('--purple-light-1', '#DB5461');
 }
 
 function darkMode(){

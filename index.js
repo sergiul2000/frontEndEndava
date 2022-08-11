@@ -69,10 +69,10 @@ rmButton.addEventListener('click', () => {
         const p = document.getElementById('about_me');
         p.innerHTML = 'Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and I have been living there since.'+
         'I study computer science. I like to meet new people and start doing or learning new things. '+
-        'I did my internship on front end at Endava. There i developed some knolege and skills '+
+        'I did my internship on front end at Endava. There i developed some knowledge and skills '+
         'in HTML, CSS, JavaScript. On my gitHub account you can see another repository of another project i was part of '+
         '(FootballAnalytics). That is an data statistical learning project which i enjoyed just as much as making this project.'+
-        'In my free time i enjoy listenning to music, watch a movie or a series or just go out with friends';
+        'In my free time i enjoy listenning to music, watch a movie or a series or just hang out with friends';
         rmButton.innerHTML = 'Read less';
         isReadMoreOn = true;
     }

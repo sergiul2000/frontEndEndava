@@ -339,3 +339,9 @@ button:hover {
     margin: 0 auto;
   }
 }
+
+@media (max-height: 500px) {
+  footer {
+    display: none;
+  }
+}

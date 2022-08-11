@@ -50,3 +50,31 @@ switchDarkMode.addEventListener('click', () => {
         darkModeIsChecked=true;
     }
 });
+
+// Dimineata s-ar putea sa va iesiti din fire din cauza unui partener de afaceri. Faptul ca aveti pareri diferite nu trebuie sa va impiedice sa analizati situatia cu luciditate si sa luati o decizie de comun acord.
+
+const rmButton = document.getElementById('readMoreButton');
+let isReadMoreOn = false;
+
+
+rmButton.addEventListener('click', () => {
+
+    if(isReadMoreOn){
+        const p = document.getElementById('about_me');
+        p.innerHTML = 'Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and I have been living there since. I study computer science. I like to meet new people and start doing or learning new things';
+        rmButton.innerHTML = 'Read more';
+        isReadMoreOn = false;
+    }
+    else{
+        const p = document.getElementById('about_me');
+        p.innerHTML = 'Hi, my name is Lupsa Sergiu-Rares. I was born in Cluj-Napoca and I have been living there since.'+
+        'I study computer science. I like to meet new people and start doing or learning new things. '+
+        'I did my internship on front end at Endava. There i developed some knolege and skills '+
+        'in HTML, CSS, JavaScript. On my gitHub account you can see another repository of another project i was part of '+
+        '(FootballAnalytics). That is an data statistical learning project which i enjoyed just as much as making this project.'+
+        'In my free time i enjoy listenning to music, watch a movie or a series or just go out with friends';
+        rmButton.innerHTML = 'Read less';
+        isReadMoreOn = true;
+    }
+    
+})

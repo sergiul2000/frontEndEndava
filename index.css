@@ -68,7 +68,9 @@ main a {
 #meniuIcon {
   display: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /** - Tablet Landscape und Large UI Scales */
@@ -106,6 +108,13 @@ main a {
   }
   nav ul li a {
     display: flex !important;
+  }
+}
+
+/* tableta */
+@media (max-height: 850px) and (min-width: 465px) {
+  footer {
+    display: none;
   }
 }
 

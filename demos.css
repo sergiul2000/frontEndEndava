@@ -459,3 +459,7 @@ input[type="text"] {
   position: fixed;
   right: 40px;
 }
+
+.tick {
+  display: none;
+}

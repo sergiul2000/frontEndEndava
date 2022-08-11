@@ -23,6 +23,7 @@ function renderTodo(todo) {
   const isChecked = todo.checked ? 'done': '';
   const node = document.createElement("li");
   node.setAttribute('class', `todo-item ${isChecked}`);
+  node.classList.add('todoItemJs');
   node.setAttribute('data-key', todo.id);
   node.innerHTML = `
     <input id="${todo.id}" type="checkbox"/>
@@ -35,6 +36,18 @@ function renderTodo(todo) {
   list.append(node);
 }
 
+function geta(){
+  const a= document.querySelectorAll('.delete-todo');
+  const b = document.querySelectorAll('.todoItemJs');
+  console.log(a);
+  console.log(b);
+  a.forEach((element,index) =>{
+    element.addEventListener('click', () =>{
+    b[index].remove();
+    });
+  });
+}
+
 function addTodo(text) {
   const todo = {
     text,
@@ -44,8 +57,9 @@ function addTodo(text) {
 
   todoItems.push(todo);
   renderTodo(todo);
+  geta();
+  
 }
-
 const form = document.querySelector('.js-form');
 form.addEventListener('submit', event => {
   event.preventDefault();

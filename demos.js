@@ -110,3 +110,59 @@ switchDarkMode.addEventListener('click', () => {
         darkModeIsChecked=true;
     }
 });
+
+switchDarkMode.addEventListener('click', () => {
+  const aux = localStorage.getItem('darkModeStorage');
+     
+  switch(aux){
+      case null:
+          // console.log(localStorage.getItem('darkModeStorage'));
+          lightMode();
+          darkModeIsChecked=false;
+          localStorage.setItem('darkModeStorage',false);
+      break
+      case 'true':
+          lightMode();
+          darkModeIsChecked=true;
+          localStorage.setItem('darkModeStorage',false);
+      break
+      case 'false':
+          // console.log(localStorage.getItem('darkModeStorage'));
+          darkMode();
+          darkModeIsChecked=false;
+          localStorage.setItem('darkModeStorage',true);
+      break
+      
+  }
+
+});
+
+function onLoadDarkMode(){
+  const aux = localStorage.getItem('darkModeStorage');
+  switch(aux){
+      case null:
+          // console.log(localStorage.getItem('darkModeStorage'));
+          darkMode();
+          darkModeIsChecked=false;
+          localStorage.setItem('darkModeStorage',true);
+          switchDarkMode.checked=true;
+      break
+      case 'true':
+          darkMode();
+          darkModeIsChecked=true;
+          localStorage.setItem('darkModeStorage',true);
+          switchDarkMode.checked=true;
+      break
+      case 'false':
+          // console.log(localStorage.getItem('darkModeStorage'));
+          lightMode();
+          darkModeIsChecked=false;
+          localStorage.setItem('darkModeStorage',false);
+          switchDarkMode.checked=false;
+      break
+      
+  }
+}
+
+
+window.onload = onLoadDarkMode();
